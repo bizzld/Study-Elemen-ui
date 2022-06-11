@@ -1,20 +1,21 @@
 <template>
+
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/layout">Layout</router-link> |
+      <router-link to="/container">Container</router-link> |
+      <router-link to="/icon">Icon and Link</router-link> |
+      <router-link to="/button">Button</router-link> |
+      <router-link to="/radio">Radio and Checkbox</router-link> |
+      <router-link to="/input">input输入框</router-link> |
+      <router-link to="/about">About</router-link>
+<!--      <br>-->
+
+    </nav>
+    <router-view/>
   </div>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
 <style>
 #app {
@@ -23,6 +24,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
