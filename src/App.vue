@@ -9,7 +9,21 @@
       <router-link to="/button">Button</router-link> |
       <router-link to="/radio">Radio and Checkbox</router-link> |
       <router-link to="/input">input输入框</router-link> |
+      <hr>
+      <router-link to="/cascade">Cascade</router-link> |
+      <router-link to="/switch">Switch</router-link> |
+      <router-link to="/slider">Slider</router-link> |
+      <router-link to="/timepicker">TimePicker</router-link> |
+      <router-link to="/datepicker">DatePicker</router-link> |
+      <router-link to="/upload">Upload</router-link> |
+      <router-link to="/rate">Rate</router-link> |
+      <hr>
+      <router-link to="/colorpicker">ColorPicker</router-link> |
+      <router-link to="/transfer">Transfer</router-link> |
+      <router-link to="/form">Form表单</router-link> |
+
       <router-link to="/about">About</router-link>
+
 <!--      <br>-->
 
     </nav>
@@ -39,3 +53,7 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+<script>export default {
+  components: {}
+}
+</script>
